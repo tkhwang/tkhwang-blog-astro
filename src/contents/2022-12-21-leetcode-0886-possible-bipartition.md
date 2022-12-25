@@ -1,18 +1,15 @@
 ---
 author: tkhwang
 datetime: 2022-12-21T00:00:00Z
-title: "leetcode 886. Possible Bipartition (javascript)"
+title: "leetcode 886. Possible Bipartition | medium | bfs"
 slug: 2022-12-21-leetcode-0886-possible-bipartition
 featured: false
 draft: false
 tags:
-  - algorithm
-  - BFS
-  - leetcode
+  - bfs
   - medium
-  - language:english
 ogImage: ""
-description: bfs, medium
+description: leetcode 886. Possible Bipartition | javascript | medium | bfs
 ---
 
 ## 🗒️ Problems
