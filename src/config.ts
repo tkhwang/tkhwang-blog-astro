@@ -7,7 +7,7 @@ export const SITE = {
   title: "algorithms in javascript",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 5,
+  postPerPage: 10,
 };
 
 export const LOGO_IMAGE = {
