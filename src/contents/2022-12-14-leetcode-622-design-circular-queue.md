@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 622. Design Circular Queue | medium | queue"
+slug: 2022-12-14-leetcode-622-design-circular-queue
 datetime: 2022-12-14T00:00:00Z
 update: 2022-12-14
 description: "leetcode 622. Design Circular Queue | javascript | medium | queue"

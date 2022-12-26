@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 1770. Maximum Score from Performing Multiplication Operations | hard | dynamic-programming"
+slug: 2022-10-21-leetcode-hard-1770-maximum-score-from-performing-multiplication-operations
 datetime: 2022-10-21T00:00:00Z
 description: "leetcode 1770. Maximum Score from Performing Multiplication Operations | javascript | hard | dynamic-programming"
 tags:

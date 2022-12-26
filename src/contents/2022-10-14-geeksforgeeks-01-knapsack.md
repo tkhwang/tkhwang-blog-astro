@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "0-1 Knapsack Problem | dynamic-programming"
+slug: 2022-10-14-geeksforgeeks-01-knapsack
 datetime: 2022-10-14T00:00:00Z
 description: "geeksforgeeks 0-1 Knapsack Problem | javascript | dynamic-programming"
 tags:

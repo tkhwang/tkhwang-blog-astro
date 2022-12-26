@@ -1,7 +1,9 @@
 ---
-title: "leetcode 36. Valid Sudoku | medium | hashMap"
+author: tkhwang
+title: "leetcode 36. Valid Sudoku | medium | hash-map"
+slug: 2022-11-23-leetcode-36-valid-sudoku
 datetime: 2022-11-23T00:00:00Z
-description: "leetcode 36. Valid Sudoku | javascript | medium | hashMap"
+description: "leetcode 36. Valid Sudoku | javascript | medium | hash-map"
 tags:
   - hashmap
   - medium

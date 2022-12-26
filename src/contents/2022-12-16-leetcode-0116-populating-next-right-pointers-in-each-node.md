@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 116. Populating Next Right Pointers in Each Node | medium | tree"
+slug: 2022-12-16-leetcode-0116-populating-next-right-pointers-in-each-node
 datetime: 2022-12-16T00:00:00Z
 update: 2022-12-16
 description: "leetcode 116. Populating Next Right Pointers in Each Node | javascript | medium | tree"
