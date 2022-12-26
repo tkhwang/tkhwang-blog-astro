@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 1523. Count Odd Numbers in an Interval Range | easy | math"
+slug: 2022-12-13-leetcode-1523-count-odd-numbers-in-an-interval-range
 datetime: 2022-12-13T00:00:00Z
 update: 2022-12-13
 description: "leetcode 1523. Count Odd Numbers in an Interval Range | javascript | easy | math"

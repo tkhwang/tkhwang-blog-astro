@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 732-my-calendar-iii | hard | intervals"
+slug: 2022-10-07-leetcode-732-my-calendar-iii
 datetime: 2022-10-07T00:00:00Z
 description: "leetcode 732-my-calendar-iii | javascript  | hard | intervals"
 tags:
