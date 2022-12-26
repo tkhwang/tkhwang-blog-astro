@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 969. Pancake Sorting | medium | greedy"
+slug: 2022-10-13-leetcode-969-pancake-sorting
 datetime: 2022-10-13T00:00:00Z
 description: "leetcode 969. Pancake Sorting | javascript | medium | greedy"
 tags:

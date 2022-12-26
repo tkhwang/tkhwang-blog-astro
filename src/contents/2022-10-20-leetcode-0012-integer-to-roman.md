@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 112. Integer to Roman | medium"
+slug: 2022-10-20-leetcode-0012-integer-to-roman
 datetime: 2022-10-20T00:00:00Z
 description: "leetcode 12. Integer to Roman | javascript | medium"
 tags:

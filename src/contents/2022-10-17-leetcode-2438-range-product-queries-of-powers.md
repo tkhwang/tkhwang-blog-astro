@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 2438. Range Product Queries of Powers | medium | bit-masking"
+slug: 2022-10-17-leetcode-2438-range-product-queries-of-powers
 datetime: 2022-10-17T00:00:00Z
 description: "leetcode 2438. Range Product Queries of Powers | javascript | medium | bit-masking"
 tags:

@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 286. Walls and Gates | medium | bfs"
+slug: 2022-12-13-leetcode-286-walls-and-gates
 datetime: 2022-12-13T00:00:00Z
 update: 2022-12-13
 description: "leetcode 286. Walls and Gates | javascript | medium | bfs"

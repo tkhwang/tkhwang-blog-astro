@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 518. Coin Change II | medium | dynamic-programming"
+slug: 2022-10-19-leetcode-0518-coin-change-ii-unbounded-knapsack
 datetime: 2022-10-19T00:00:00Z
 description: "leetcode 518. Coin Change II | javascript | medium | dynamic-programming"
 tags:
