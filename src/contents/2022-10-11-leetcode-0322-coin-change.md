@@ -7,10 +7,11 @@ description: "leetcode 322. Coin Change | javascript  | medium | dynamic-program
 tags:
   - dynamic-programming
   - medium
+featured: true
+draft: false
 ---
 
-아주 유명한 전형적인 dynamic programming 문제입니다.<br />
-그동안 bottom-up 에만 익숙해서 top-down 도 익숙해질 겸해서 정리해봅니다.
+One of the famous dynamic programming problems.
 
 ## 🗒️ Problems
 
@@ -30,23 +31,23 @@ Explanation: 11 = 5 + 5 + 1
 
 ## 🍀 Intuition
 
-```javascript
+```
 // base case
 dp[0][0][...] = base case
 
 // state transfer
-for (const 상태1 of 상태1_모든_데이터) {
-    for (const 상태2 of 상태2_모든_데이터) {
+for (const state1 of ALL_STATE1) {
+    for (const state2 of ALL_STATE2) {
         for (...) {
-            dp[상태1][상태2][....] = 최댓값_구하기(선택1, 선택2, ...);
+            dp[state1][state2][....] = calc_max(choice1, choice2, ...);
         }
     }
 }
 ```
 
-- 상태 : 특정 금액
-- 선택 : 가지고 있는 동전 중에서 하나를 선택
-- `dp[amount]` : 해당 금액을 가지고 있는 동전으로 교환 시에 가장 작은 동전 사용 갯수.
+- state : money amount
+- choice : select one coin
+- `dp[amount]` : the minimum number of coins with that amount of money
 
 ## ⬆️ bottom-up
 
@@ -57,9 +58,9 @@ var coinChange = function (coins, amount) {
   const dp = Array(amount + 1).fill(Infinity);
   dp[0] = 0;
 
-  // 특정 금액인 상태의 모든 값을 순환
+  // for all money
   for (let i = 1; i <= amount; i += 1) {
-    // 주어진 특정한 상태 (amount)에서 가능한 모든 선택에 대해서 값 계산
+    // for the specific amount of money, calculate all possible choices
     for (const coin of coins) {
       if (i - coin < 0) continue;
 
@@ -95,11 +96,11 @@ var coinChange = function (coins, amount) {
 };
 ```
 
-그냥 top-down 으로 풀이 시 반복되는 recursive 특성 때문에 TLE 발생합니다.
+The top-down solution without memoization causes the TLE error.
 
 ## ⬇️ 🔥 top-down with memoization
 
-- top-down solution 에 `cache` object 를 이용한 memoization 적용.
+- top-down solution with `cache` object for memoization.
 
 ```javascript
 var coinChange = function (coins, amount) {
@@ -124,7 +125,3 @@ var coinChange = function (coins, amount) {
   return dp(amount);
 };
 ```
-
-## Reference
-
-- [알라딘: 코딩 인터뷰를 위한 알고리즘 치트시트](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=301923855&start=slayer)
