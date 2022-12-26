@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 37. Sudoku Solver | hard | backtrack"
+slug: 2022-10-12-leetcode-0037-sudoku-solver
 datetime: 2022-10-12T00:00:00Z
 description: "leetcode 37. Sudoku Solver | javascript | hard | backtrack"
 tags:

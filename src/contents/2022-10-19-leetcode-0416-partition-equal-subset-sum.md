@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 416. Partition Equal Subset Sum | medium | backtrack | dynamic-programming"
+slug: 2022-10-19-leetcode-0416-partition-equal-subset-sum
 datetime: 2022-10-19T00:00:00Z
 description: "leetcode 416. Partition Equal Subset Sum | javascript | medium | backtrack | dynamic-programming"
 tags:

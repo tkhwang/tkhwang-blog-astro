@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 2444. Count Subarrays With Fixed Bounds | hard | sliding-window"
+slug: 2022-10-17-leetcode-2444-count-subarrays-with-fixed-bounds
 datetime: 2022-10-17T00:00:00Z
 description: "leetcode 2444. Count Subarrays With Fixed Bounds | javascript | hard | sliding-window"
 tags:

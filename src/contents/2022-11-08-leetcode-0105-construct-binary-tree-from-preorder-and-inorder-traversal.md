@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 105. Construct Binary Tree from Preorder and Inorder Traversal | medium | tree"
+slug: 2022-11-08-leetcode-0105-construct-binary-tree-from-preorder-and-inorder-traversal
 datetime: 2022-11-08T00:00:00Z
 description: "leetcode 105. Construct Binary Tree from Preorder and Inorder Traversal | javascript | medium | tree"
 tags:

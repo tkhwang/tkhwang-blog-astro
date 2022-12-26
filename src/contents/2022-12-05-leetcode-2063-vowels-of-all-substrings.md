@@ -1,5 +1,7 @@
 ---
+author: tkhwang
 title: "leetcode 2063. Vowels of All Substrings | medium | contribution"
+slug: 2022-12-05-leetcode-2063-vowels-of-all-substrings
 datetime: 2022-12-05T00:00:00Z
 description: "leetcode 2063. Vowels of All Substrings | javascript | medium | contributions"
 tags:
