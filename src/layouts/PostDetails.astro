@@ -6,6 +6,7 @@ import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { MarkdownInstance } from "astro";
 import type { Frontmatter } from "src/types";
+import Comment from "@components/Comment.astro";
 
 export interface Props {
   post: MarkdownInstance<Frontmatter>;
@@ -45,6 +46,7 @@ const { title, author, description, ogImage, datetime, tags } = frontmatter;
 
     <article id="article" role="article" class="mx-auto max-w-3xl mt-8 prose">
       <Content />
+      <Comment />
     </article>
   </main>
   <Footer />
