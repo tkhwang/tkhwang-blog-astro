@@ -12,9 +12,9 @@ tags:
 
 [(1) Integer to Roman - LeetCode](https://leetcode.com/problems/integer-to-roman/)
 
+```
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
-```
 Symbol       Value
 I             1
 V             5
@@ -23,7 +23,6 @@ L             50
 C             100
 D             500
 M             1000
-```
 
 For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
 
@@ -34,6 +33,7 @@ Roman numerals are usually written largest to smallest from left to right. Howev
 - C can be placed before D (500) and M (1000) to make 400 and 900.
 
 Given an integer, convert it to a roman numeral.
+```
 
 ```
 Input: num = 58
