@@ -13,6 +13,7 @@ tags:
 
 [Maximum Score from Performing Multiplication Operations - LeetCode](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/)
 
+```
 You are given two 0-indexed integer arrays nums and multipliers of size n and m respectively, where n >= m.
 
 You begin with a score of 0. You want to perform exactly m operations. On the ith operation (0-indexed) you will:
@@ -23,6 +24,7 @@ You begin with a score of 0. You want to perform exactly m operations. On the it
   - Remove x from nums.
 
 Return the maximum score after performing m operations.
+```
 
 ```
 Input: nums = [1,2,3], multipliers = [3,2,1]
