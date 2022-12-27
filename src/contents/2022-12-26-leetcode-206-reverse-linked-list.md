@@ -1,14 +1,15 @@
 ---
 author: tkhwang
-title: "leetcode 206. Reverse Linked List | easy | linked-list | recursive"
+title: "leetcode 206. Reverse Linked List | easy | linked-list | iterative | recursive"
 datetime: 2022-12-26T00:00:00Z
 slug: 2022-12-26-leetcode-206-reverse-linked-list
-description: "leetcode 206. Reverse Linked List | javascript  | easy | linked-list | recursive"
+description: "leetcode 206. Reverse Linked List | javascript  | easy | linked-list | iterative | recursive"
 featured: true
 draft: false
 tags:
   - easy
   - linked-list
+  - iterative
   - recursive
 ogImage: ""
 ---
@@ -27,15 +28,82 @@ Output: [5,4,3,2,1]
 ## 🤔 First attempt
 
 - I don't know why... but I don't like the linked list.
-- Among them, I don't know this reverting the linked list.
+- Among them, especially I don't like reverting the linked list.
 - ...
 - Let's be more familiar with the linked list further.
 
 ## ✨ Idea
 
+- Use the iterative method.
 - Use the recursive function.
 
-## ♻️ recursive function
+## ➡️ iterative
+
+### 💡 How to revert
+
+```
+head -> 1 -> 2 -> ...
+  |     |
+ prv   cur
+
+null <- 1 <- 2 <- ...
+        |    |
+       prv  cur
+```
+
+### 1. revert: set `cur` to point `prv`
+
+```javascript
+cur.next = prv;
+```
+
+### 2. backup `cur.next`
+
+```javascript
+// backup
+const next = cur.next;
+// revert
+cur.next = prv;
+```
+
+### 3. proceed
+
+```javascript
+prv = cur;
+cur = next;
+```
+
+### 🔥🔗➡️ My recursive solution
+
+```javascript
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var reverseList = function (head) {
+  let prv = null;
+  let cur = head;
+
+  while (cur) {
+    const next = cur.next;
+    cur.next = prv;
+
+    prv = cur;
+    cur = next;
+  }
+
+  return prv;
+};
+```
+
+## ♻️ recursive
 
 - Let's define the recursive function which reverts the linked list in action.
   - revert all beneath the given node.
@@ -48,7 +116,7 @@ Output: [5,4,3,2,1]
   };
 ```
 
-## The result
+### The result
 
 - is just calling the recursive function `reverse(head)` with the head node.
 
@@ -56,9 +124,9 @@ Output: [5,4,3,2,1]
 return reverse(head);
 ```
 
-## ♻️ inside the recursive function
+### ♻️ inside the recursive function
 
-### 0. problem
+#### 0. problem
 
 ```javascript
 head -> 1 -> 2 -> 3 -> 4 -> 5 -> null
@@ -66,7 +134,7 @@ head -> 1 -> 2 -> 3 -> 4 -> 5 -> null
 null <- 1 <- 2 <- 3 <- 4 <- 5 <- head
 ```
 
-### 1. basecase
+#### 1. basecase
 
 - If the node is null or the only node (next is null), no need to revert.
 - Just return the node.
@@ -75,13 +143,13 @@ null <- 1 <- 2 <- 3 <- 4 <- 5 <- head
 if (!node || node.next === null) return node;
 ```
 
-### 2. 💡 revert again except for the head node
+#### 2. 💡 revert again except for the head node
 
 ```javascript
 const last = reverse(node.next);
 ```
 
-### 3. 💡 treat head and last node
+#### 3. 💡 treat head and last node
 
 - `last` is the new head of the reverted linked list.
   - should be returned as the head of the reverted linked list.
@@ -115,7 +183,7 @@ node.next.next = node;
 node.next = null;
 ```
 
-### ⬇️♻️ 4. put together
+#### ⬇️♻️ 4. put together
 
 ```javascript
 const reverse = node => {
@@ -130,13 +198,13 @@ const reverse = node => {
 };
 ```
 
-### 🔗 5. final result
+#### 🔗 5. final result
 
 ```
 null <- 1 <- 2 <- 3 <- 4 <- 5
 ```
 
-## 🔥🔗⬇️♻️ My Solution
+### 🔥🔗⬇️♻️ My recursive solution
 
 ```javascript
 /**
