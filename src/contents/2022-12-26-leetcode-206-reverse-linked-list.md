@@ -148,44 +148,60 @@ null <- 1 <- 2 <- 3 <- 4 <- 5 <- head
 if (!node || node.next === null) return node;
 ```
 
-#### 2. 💡 revert again except for the head node
+#### 2. 💡 revert except for the head node
 
 ```javascript
 const last = reverse(node.next);
 ```
 
-#### 3. 💡 treat head and last node
-
 - `last` is the new head of the reverted linked list.
   - should be returned as the head of the reverted linked list.
 
 ```
+// proceed to the end
 reverse(1,2,3,4,5)
 
+
+|
 1 => reverse(2,3,4,5)
-|\
-2 => reverse(3,4,5)
-|\
-3 => reverse(4,5)
-|\
-4 => reverse(5)
-|\
-5
-|\
-head
+     |
+1 => 2 => reverse(3,4,5)
+          |
+1 => 2 => 3 => reverse(4,5)
+               |
+1 => 2 => 3 => 4 => reverse(5)
+
+1 => 2 => 3 => 4 => 5
+                    |
+                   last
 ```
 
-- the old `head` (`node` in `reverse()` function) should be the end of the reverted linked list and should point to null
+#### 3. 💡 after returning from the end
+
+- let `node` point back to `node`
+- set `node` null
+  - only the head node remains `null`.
+  - the beneath node was set to be `null`, but later changed to point the previous node after returning `revert()` function.
 
 ```javascript
 node -> // node.next
      <- // node.next.next
 
 node.next.next = node;
+node = null;
 ```
 
-```javascript
-node.next = null;
+```
+// revert
+head.next.next = head
+
+1 => 2 => 3 => 4 <= 5
+                    |
+                   last
+...                 |
+1 <= 2 <= 3 <= 4 <= 5
+|
+null
 ```
 
 #### ⬇️♻️ 4. put together
