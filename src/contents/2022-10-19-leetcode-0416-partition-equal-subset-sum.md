@@ -17,7 +17,9 @@ knapsack을 이용한 dynamic programming 방법으로 푸는 방법이 있어�
 
 [Partition Equal Subset Sum - LeetCode](https://leetcode.com/problems/partition-equal-subset-sum/)
 
+```
 Given a non-empty array nums containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
+```
 
 ```
 Input: nums = [1,5,11,5]

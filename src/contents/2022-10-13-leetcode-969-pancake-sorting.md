@@ -13,6 +13,7 @@ tags:
 
 [Pancake Sorting - LeetCode](https://leetcode.com/problems/pancake-sorting/)
 
+```
 Given an array of integers arr, sort the array by performing a series of pancake flips.
 In one pancake flip we do the following steps:
 
@@ -22,6 +23,7 @@ In one pancake flip we do the following steps:
 For example, if arr = [3,2,1,4] and we performed a pancake flip choosing k = 3, we reverse the sub-array [3,2,1], so arr = [1,2,3,4] after the pancake flip at k = 3.
 
 Return an array of the k-values corresponding to a sequence of pancake flips that sort arr. Any valid answer that sorts the array within 10 \* arr.length flips will be judged as correct.
+```
 
 ```
 Input: arr = [3,2,4,1]
