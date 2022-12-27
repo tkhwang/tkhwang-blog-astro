@@ -23,7 +23,7 @@ You are given weights and values of N items, put these items in a knapsack of ca
 In other words, given two integer arrays val[0..N-1] and wt[0..N-1] which represent values and weights associated with N items respectively. Also given an integer W which represents knapsack capacity, find out the maximum value subset of val[] such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item or dont pick it (0-1 property).
 ```
 
-If the weight `wt[i]` and `value[i]` of total N items are given, what is the maximum sum of those values which can be added in the total weight limit `W` knapsack bag ?
+If the weight `weight[i]` and `values[i]` of total N items are given, what is the maximum sum of those values which can be added in the total weight limit `W` knapsack bag ?
 
 ```
 Input:
@@ -36,7 +36,7 @@ Output: 3
 
 ## ✨ Idea
 
-- Not the special algorithm but find the maximum value by the full search using `DP` array.
+Not the special algorithm but find the maximum value by the full search using `DP` array.
 
 #### choice
 
@@ -50,7 +50,7 @@ Output: 3
 
 #### `dp[]`
 
-- `dp[i-th item][weight]`
+- `dp[i-th item][weight]`: for i-th items and `weight` limit case, the maximum `value` which can be added.
 - final answer is `dp[N][W]`
 
 ## ⬇️ top-down solution `dp() function`
@@ -65,19 +65,24 @@ If there is no item or knapsack weight limit is less than 0, we couldn't choose 
     const dp = (n, w) => {
       if (n <= 0 || w <= 0) return 0
       ...
+    }
+
+    return dp(N, W);
 ```
 
 #### state transfer function
 
 For the case n-th item, weight `w`:
 
-- If n-th item is not included, it doesn't change both weight and value, so that it is the same as the previous.
+- If n-th item is not included:
+  - it doesn't change both weight and value, so that it is the same as the previous.
 
 ```javascript
 dp(n, w) = dp(n - 1, w)
 ```
 
-- If n-th item is included, n-th item / weight `wt[n-1]` is chosen, the final result can be calculate like the following using the previous one and n-th item's value `val[n-1]`.
+- If n-th item is included:
+  - n-th item / weight `wt[n-1]` is chosen, the final result can be calculated like the following using the previous one and n-th item's value `val[n-1]`.
 
 ```javascript
 dp(n, w) = dp(n - 1, w - wt[n - 1]) + val[n - 1]
@@ -148,10 +153,10 @@ class Solution {
         return dp(n - 1, w);
       } else {
         cache[key] = Math.max(
-          // n번째 물건 포함
-          dp(n - 1, w - wt[n - 1]) + val[n - 1],
-          // n번째 물건 포함하지 않음
-          dp(n - 1, w)
+          // not add
+          dp(n - 1, w),
+          // add
+          dp(n - 1, w - wt[n - 1]) + val[n - 1]
         );
         return cache[key];
       }
@@ -182,7 +187,7 @@ for (const state1 of ALL_STATE1) {
 }
 ```
 
-#### `dp[]` 정의
+#### `dp[]` definition
 
 - `dp[ith-item][weight]`
 - basecase value is 0.
@@ -209,9 +214,9 @@ class Solution {
           dp[n][w] = dp[n - 1][w];
         } else {
           dp[n][w] = Math.max(
-            // add i-th item
-            dp[n - 1][w],
             // not add i-th item
+            dp[n - 1][w],
+            // add i-th item
             dp[n - 1][w - wt[n - 1]] + val[n - 1]
           );
         }
