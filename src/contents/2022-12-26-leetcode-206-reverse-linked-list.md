@@ -184,24 +184,20 @@ reverse(1,2,3,4,5)
   - the beneath node was set to be `null`, but later changed to point the previous node after returning `revert()` function.
 
 ```javascript
+head
+|
+1 => 2 => 3 => 4 => 5
+
+// revert
 node -> // node.next
      <- // node.next.next
 
 node.next.next = node;
 node = null;
-```
 
-```
-// revert
-head.next.next = head
-
-1 => 2 => 3 => 4 <= 5
-                    |
-                   last
-...                 |
 1 <= 2 <= 3 <= 4 <= 5
-|
-null
+|                   |
+null               last
 ```
 
 #### ⬇️♻️ 4. put together
