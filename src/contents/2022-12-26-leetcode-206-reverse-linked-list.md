@@ -51,13 +51,13 @@ null <- 1 <- 2 <- ...
        prv  cur
 ```
 
-### 1. revert: set `cur` to point `prv`
+### 1. revert: set next of `cur` (`cur.next`) to point `prv`
 
 ```javascript
 cur.next = prv;
 ```
 
-### 2. backup `cur.next`
+### 2. backup `cur.next` for later usage
 
 ```javascript
 // backup
@@ -66,11 +66,14 @@ const next = cur.next;
 cur.next = prv;
 ```
 
-### 3. proceed
+### 3. proceed to the next
 
 ```javascript
-prv = cur;
-cur = next;
+while (cur) {
+  ...
+  prv = cur;
+  cur = next;
+}
 ```
 
 ### 🔥🔗➡️ My recursive solution
