@@ -8,6 +8,7 @@ featured: true
 draft: false
 tags:
   - dynamic-programming
+  - knapsack
   - geeksforgeeks
 ---
 
@@ -51,7 +52,7 @@ Not the special algorithm but find the maximum value by the full search using `D
 #### `dp[]`
 
 - `dp[i-th item][weight]`: for i-th items and `weight` limit case, the maximum `value` which can be added.
-- final answer is `dp[N][W]`
+- final answer will be `dp[N][W]`
 
 ## ⬇️ top-down solution `dp() function`
 
@@ -59,7 +60,7 @@ Not the special algorithm but find the maximum value by the full search using `D
 
 #### Base case
 
-If there is no item or knapsack weight limit is less than 0, we couldn't choose and return 0.
+If there is no item or knapsack weight limit is less than 0, the final maximum should be 0.
 
 ```javascript
     const dp = (n, w) => {
@@ -74,14 +75,14 @@ If there is no item or knapsack weight limit is less than 0, we couldn't choose 
 
 For the case n-th item, weight `w`:
 
-- If n-th item is not included:
+- (choice1) n-th item is not included:
   - it doesn't change both weight and value, so that it is the same as the previous.
 
 ```javascript
 dp(n, w) = dp(n - 1, w)
 ```
 
-- If n-th item is included:
+- (choice2) n-th item is included:
   - n-th item / weight `wt[n-1]` is chosen, the final result can be calculated like the following using the previous one and n-th item's value `val[n-1]`.
 
 ```javascript
