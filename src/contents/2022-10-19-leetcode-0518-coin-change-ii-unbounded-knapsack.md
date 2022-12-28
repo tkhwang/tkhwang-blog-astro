@@ -5,11 +5,12 @@ slug: 2022-10-19-leetcode-0518-coin-change-ii-unbounded-knapsack
 datetime: 2022-10-19T00:00:00Z
 description: "leetcode 518. Coin Change II | javascript | medium | dynamic-programming"
 tags:
-  - dynamic-programming
   - medium
+  - dynamic-programming
+  - knapsack
 ---
 
-이 문제가 01 knapsack 과 달리 물건의 갯수가 무한한 경우일때 특별히 `unbounded knapsack` 문제라고 해서 한다고 합니다. 이에 knapsack DP 형식으로 정리해봅니다.
+Unlikely 01 kanpsack problem, this kind problem is called as `unbounded kanpsack` because the number of items is unlimited.
 
 ## 🗒️ Problems
 
@@ -37,39 +38,52 @@ Explanation: there are four ways to make up the amount:
 
 ## ✨ Idea
 
-| 01 Knapsack                             | Coin change II                         |
-| --------------------------------------- | -------------------------------------- |
-| 배낭 총 무게 W                          | 총 금액 `amount`                       |
-| 물건 종류 N                             | 코인 종류 N                            |
-| 물건 무게 `wt[0,...,N-1]`               | 코인 금액 `coins[0,...,N-1]`           |
-| 물건 가치 `vat[0,...,N-1]`              | 코인 갯수 무제한                       |
-| 무게W 배낭에 넣을 수 있는 최대 가치는 ? | 금액 W 만들 수 있는 코인의 종류 수는 ? |
+| 01 Knapsack                                | Unbounded knapsack (Coin change II) |
+| ------------------------------------------ | ----------------------------------- |
+| knapsack total weight `W`                  | total money `amount`                |
+| `N` items                                  | `N` coins                           |
+| item weight `weight[0...N-1]`              | coin money `coins[0...N-1]`         |
+| item value `value[0...N-1]`                | number of coins: unlimited          |
+| maximum value in weight limit `W` knapsack | number of coins which amount is `W` |
 
-## 🍀 Intuition
+## 🍀🕸️ dynamic programming concept
 
-### 🕸️ dynamic programming 기본 정리
+#### Choice
 
-- 선택 : i번째 코인을 선택하기 or 하지 않기
-- 상태 :
-  - 코인 종류 `N`
-  - 금액 `w`
-- `dp[]` : `dp[c][w]` 코인 `[1,...,c]` 사용해서 금액 `w` 만들 수 있는 코인 종류 가짓수.
-- 최종 값 : `dp[C+1][W+1]`
-- basecase
-  - `dp[0][*] = 0` : 코인을 하나도 사용하지 않으면 코인 종류 가짓수는 언제나 0.
-  - `dp[*][0] = 1` : 총 금액 0을 만들 수 있는 코인 종류 가짓수는 해당 코인 전부 사용하지 않는 방법 1.
+- select i-th coin
+- or not
 
-### 🕸️ 💡 상태 전이 방정식
+#### State
 
-- c번째 현재 코인 `coins[c-1]` 의 무게가 총 금액보다 큰 경우에는 c번째 코인 선택을 할 수 없으므로 이전과 동일.
-- c번째 코인 선택 가능한 경우 만들 수 있는 코인 종류의 갯수는 다음 두 가지의 합
-  - `(c-1)` 번째 코인 선택해서 만들 수 있는 방법 : `dp[c-1][w]`
-  - `c` 번째 코인 선택 : `dp[c][w - coins[c-1]]`
-  - 금액2 `coins[c-1]` 인 동전으로 5 `w` 를 만들려면 3 `w - coins[c-1]`을 만드는 방법을 알고, 이에 2를 더해 5를 만들 수 있음.
+- coin type `N`
+- money `w`
+
+##### DP
+
+- `dp[c][w]` : the number of used coin of coin `coins[0...c-1]` for amount `w`
+- final answer will be `dp[C][W]`
+
+#### basecase
+
+- `dp[0][*] = 0` : if none of coins is used, the number of used coins is zero.
+- `dp[*][0] = 1` : the number of used coins for making total money 0 is only one - not to use none of coins.
+
+### 🕸️💡 State transfer equation
+
+- If the money amount of c-th coin `coins[c-1]` itself is larger than the money amount limit `w`, we couldn't consider this case, so that the number of used coins is same as that of previous one.
 
 ```javascript
 if (w < coins[c]) {
   dp[c][w] = dp[c - 1][w];
+}
+```
+
+- If c-th coin can be selectable, the possible cases are following:
+  1. `dp[c-1][w]` : the number of used coin of using `c-1` coins for amount `w`.
+  2. `dp[c][w - coins[c-1]]`
+  - For example, you want to make `money 2` coin for `amount 5`. If you know possible coin numbers for `amount 3`, you can just add possible number of making `amount 2` with coin `money 2` on top of the previous result.
+
+```javascript
 } else {
   dp[c][w] = dp[c - 1][w] + dp[c][w - coins[c - 1]];
 }
