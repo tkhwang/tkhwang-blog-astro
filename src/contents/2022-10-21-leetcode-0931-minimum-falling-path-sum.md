@@ -21,7 +21,7 @@ A falling path starts at any element in the first row and chooses the element in
 
 ## 🤔🔀 First attempt
 
-이 문제는 딱 보면 matrix에서 DFS traverse 다.
+At first, I thought that it can be solved by DFS traversal.
 
 ```javascript
 var minFallingPathSum = function (matrix) {
@@ -66,15 +66,14 @@ var minFallingPathSum = function (matrix) {
 
 ## ✨ Idea
 
-- matrix 문제를 traverse 문제가 아니라
-- dynamic programming의 path problem 으로 생각하여 DP 로 해결한다.
+- Can you think of dynamic programming in matrix ?
 
 ## 🍀 Intuition
 
 ### 🕸️💡 Dynamic programming pathing problem
 
-- 일반적인 matrix traverse 문제에서 **움직이는 방향에 제약**이 걸려져 있어서 backward 돌아가는 일이 없는 경우에는 단순 traverse 가 아니라 DP 로서 문제 해결이 가능함.
-  - DP의 상태 전이 방정식이 성립하려면 일정한 방향성이 존재해야 하니깐...
+- When there is a restriction of a cell to move in matrix, so that it cann't go backward, the problem can be solved using dynamic programming instead of as-is graph/matrix traversal.
+  - For the state transfer equation, some directionality should exist.
 
 ### state
 
@@ -86,7 +85,7 @@ const dp = Array(ROWS)
 
 ### basecase
 
-첫 row는 해당 값 그대로 `dp[0]` 설정됨.
+The first row is set the same value in the given input `matrix[0]`.
 
 ```javascript
 for (let c = 0; c < COLS; c += 1) {
@@ -94,9 +93,10 @@ for (let c = 0; c < COLS; c += 1) {
 }
 ```
 
-### 상태 전이 방정식
+### State transfer equation
 
-최저값을 찾아야 하므로 윗줄에서 boundary 를 벗어나는 경우를 undefined value 대신에 Infinity 로 설정해서 값이 invalid 하도록 함.
+We should find the minimum value.
+For simplifying the out of bound problem, use the default value `Infinity` when the cell is out of bound.
 
 ```javascript
 for (let r = 1; r < ROWS; r += 1) {
