@@ -6,8 +6,8 @@ datetime: 2022-12-16T00:00:00Z
 update: 2022-12-16
 description: "leetcode 116. Populating Next Right Pointers in Each Node | javascript | medium | tree"
 tags:
-  - tree
   - medium
+  - tree
 ---
 
 ## 🗒️ Problems

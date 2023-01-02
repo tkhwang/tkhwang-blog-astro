@@ -5,8 +5,8 @@ slug: 2022-10-24-leetcode-1239-maximum-length-of-a-concatenated-string-with-uniq
 datetime: 2022-10-24T00:00:00Z
 description: "leetcode 1239. Maximum Length of a Concatenated String with Unique Characters | javascript | medium | bitset"
 tags:
-  - bitset
   - medium
+  - bitset
 ---
 
 ## 🗒️ Problems

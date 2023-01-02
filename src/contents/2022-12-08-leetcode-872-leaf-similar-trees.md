@@ -5,8 +5,8 @@ slug: 2022-12-08-leetcode-872-leaf-similar-trees
 datetime: 2022-12-08T00:00:00Z
 description: "leetcode 872. Leaf-Similar Trees | javascript | easy | tree"
 tags:
-  - tree
   - easy
+  - tree
 ---
 
 This problem is the basic tree problem, but I come to know one thing.
