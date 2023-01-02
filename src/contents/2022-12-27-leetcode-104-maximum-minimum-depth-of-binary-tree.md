@@ -2,7 +2,7 @@
 title: "leetcode Maximum (104) / Minimum (111) Depth of Binary Tree | easy | tree"
 datetime: 2022-12-27T00:00:00Z
 description: "leetcode Maximum (104) / Minimum (111) Depth of Binary Tree | javascript  | easy | tree"
-slug: "2022-12-27-leetcode-maximum-minimum-depth-of-binary-tree"
+slug: "2022-12-27-leetcode-104-maximum-minimum-depth-of-binary-tree"
 featured: false
 draft: false
 tags:
