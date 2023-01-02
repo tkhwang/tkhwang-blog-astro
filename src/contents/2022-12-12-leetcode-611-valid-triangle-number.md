@@ -5,8 +5,8 @@ slug: 2022-12-12-leetcode-611-valid-triangle-number
 datetime: 2022-12-12T00:00:00Z
 description: "leetcode 611. Valid Triangle Number | javascript | medium | binary-search"
 tags:
-  - binary-search
   - medium
+  - binary-search
 ---
 
 ## 🗒️ Problems

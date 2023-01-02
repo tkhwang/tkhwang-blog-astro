@@ -5,8 +5,8 @@ slug: 2022-10-21-leetcode-0931-minimum-falling-path-sum
 datetime: 2022-10-21T00:00:00Z
 description: "leetcode 931. Minimum Falling Path Sum | javascript | medium | dynamic-programming"
 tags:
-  - dynamic-programming
   - medium
+  - dynamic-programming
 ---
 
 ## 🗒️ Problems

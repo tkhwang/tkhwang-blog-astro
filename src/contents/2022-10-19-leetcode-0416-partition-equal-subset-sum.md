@@ -5,9 +5,9 @@ slug: 2022-10-19-leetcode-0416-partition-equal-subset-sum
 datetime: 2022-10-19T00:00:00Z
 description: "leetcode 416. Partition Equal Subset Sum | javascript | medium | backtrack | dynamic-programming"
 tags:
+  - medium
   - backtrack
   - dynamic-programming
-  - medium
 ---
 
 가장 먼저 생각난 솔루션은 backtrack 이지만 효율이 좋지 못하네요. <br />

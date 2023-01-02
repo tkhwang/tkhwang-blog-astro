@@ -5,8 +5,8 @@ slug: 2022-11-16-leetcode-115-distinct-subsequences
 datetime: 2022-11-16T00:00:00Z
 description: "leetcode 115. Distinct Subsequences | javascript | medium | recursive"
 tags:
-  - recursive
   - medium
+  - recursive
 ---
 
 ## 🗒️ Problems

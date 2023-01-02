@@ -5,8 +5,8 @@ slug: 2022-10-19-leetcode-1312-minimum-insertion-steps-to-make-a-string-palindro
 datetime: 2022-10-19T00:00:00Z
 description: "leetcode 1312. Minimum Insertion Steps to Make a String Palindrome | javascript | hard | dynamic-programming"
 tags:
-  - dynamic-programming
   - hard
+  - dynamic-programming
 ---
 
 ## 🗒️ Problems

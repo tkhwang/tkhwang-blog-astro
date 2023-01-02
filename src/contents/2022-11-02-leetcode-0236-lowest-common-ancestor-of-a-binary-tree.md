@@ -5,8 +5,8 @@ slug: 2022-11-02-leetcode-0236-lowest-common-ancestor-of-a-binary-tree
 datetime: 2022-11-02T00:00:00Z
 description: "leetcode 236. Lowest Common Ancestor of a Binary Tree | javascript | medium | tree"
 tags:
-  - tree
   - medium
+  - tree
 ---
 
 ## 🗒️ Problems

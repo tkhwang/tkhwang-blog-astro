@@ -5,8 +5,8 @@ slug: 2022-10-04-leetcode-329-longest-increasing-path-in-a-matrix
 datetime: 2022-10-04T00:00:00Z
 description: "leetcode 329. Longest Increasing Path in a Matrix | javascript  | hard | graph"
 tags:
-  - graph
   - hard
+  - graph
 ---
 
 ## 🗒️ Problem

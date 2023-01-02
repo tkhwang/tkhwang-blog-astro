@@ -5,9 +5,9 @@ slug: 2022-10-18-leetcode-300-longest-increasing-subsequence
 datetime: 2022-10-18T00:00:00Z
 description: "leetcode 300. Longest Increasing Subsequence | javascript | medium | dynamic-programming | binary-search"
 tags:
+  - medium
   - dynamic-programming
   - binary-search
-  - medium
 ---
 
 ## 🗒️ Problem

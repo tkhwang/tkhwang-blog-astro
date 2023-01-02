@@ -6,9 +6,9 @@ datetime: 2022-12-14T00:00:00Z
 update: 2022-12-14
 description: "leetcode 622. Design Circular Queue | javascript | medium | queue"
 tags:
+  - medium
   - queue
   - design
-  - medium
 ---
 
 ## 🗒️ Problems

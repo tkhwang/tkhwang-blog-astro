@@ -6,8 +6,8 @@ datetime: 2022-12-13T00:00:00Z
 update: 2022-12-13
 description: "leetcode 1523. Count Odd Numbers in an Interval Range | javascript | easy | math"
 tags:
-  - math
   - easy
+  - math
 ---
 
 ## 🗒️ Problems
