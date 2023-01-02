@@ -6,8 +6,8 @@ datetime: 2022-12-13T00:00:00Z
 update: 2022-12-13
 description: "leetcode 286. Walls and Gates | javascript | medium | bfs"
 tags:
-  - bfs
   - medium
+  - bfs
 ---
 
 ## 🗒️ Problems

@@ -6,8 +6,8 @@ slug: 2022-12-21-leetcode-0886-possible-bipartition
 featured: false
 draft: false
 tags:
-  - bfs
   - medium
+  - bfs
 ogImage: ""
 description: leetcode 886. Possible Bipartition | javascript | medium | bfs
 ---

@@ -5,8 +5,8 @@ slug: 2022-10-11-leetcode-0322-coin-change
 datetime: 2022-10-11T00:00:00Z
 description: "leetcode 322. Coin Change | javascript  | medium | dynamic-programming"
 tags:
-  - dynamic-programming
   - medium
+  - dynamic-programming
 featured: true
 draft: false
 ---

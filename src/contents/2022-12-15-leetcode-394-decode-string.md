@@ -6,8 +6,8 @@ datetime: 2022-12-15T00:00:00Z
 update: 2022-12-15
 description: "leetcode 394. Decode String | javascript | medium | parsing"
 tags:
-  - parsing
   - medium
+  - parsing
 ---
 
 ## 🗒️ Problems
