@@ -5,10 +5,11 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
+import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-paper.pages.dev/",
+  site: "https://tkhwang.github.io",
   integrations: [
     tailwind({
       config: {
@@ -23,6 +24,7 @@ export default defineConfig({
         forward: ["dataLayer.push"],
       },
     }),
+    robotsTxt(),
   ],
   markdown: {
     remarkPlugins: [
