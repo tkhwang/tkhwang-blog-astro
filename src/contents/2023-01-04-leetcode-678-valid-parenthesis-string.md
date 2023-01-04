@@ -74,7 +74,10 @@ var checkValidString = function (s) {
 };
 ```
 
-It fails due the TLE because `s.length` can be 100.
+### 🙅‍♂️ Failed time complexity : `O(3^n)`
+
+If the string consists of only `*`, it splits into 3 branches (`(`, `)`, `"`).
+So that it will be `O(3^n)`. It fails due TLE because `s.length` can be 100.
 
 ## 🍀 Intuition
 
@@ -173,3 +176,5 @@ var checkValidString = function (s) {
   return true;
 };
 ```
+
+### 🙆‍♂️ Time complexity: `O(n)`

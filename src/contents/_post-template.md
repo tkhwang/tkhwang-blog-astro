@@ -14,6 +14,8 @@ ogImage: ""
 
 ## 🤔 First attempt
 
+### 🙅‍♂️ Failed time complexity : `O(n)`
+
 ## ✨ Idea
 
 ## 🍀 Intuition
@@ -47,3 +49,5 @@ ogImage: ""
 ```javascript
 
 ```
+
+### 🙆‍♂️ Time complexity: `O(n)`
