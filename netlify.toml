@@ -1,3 +1,48 @@
 [[redirects]]
   from = "/2022-10-04-leetcode-329-longest-increasing-path-in-a-matrix/"
   to = "/posts/2022-10-04-leetcode-329-longest-increasing-path-in-a-matrix/"
+
+[[redirects]]
+  from = "/2022-10-21-leetcode-0931-minimum-falling-path-sum/"
+  to = "/posts/2022-10-21-leetcode-0931-minimum-falling-path-sum/"
+
+[[redirects]]
+  from = "/2022-11-23-leetcode-valid-sudoku/"
+  to = "/posts/2022-11-23-leetcode-valid-sudoku/"
+
+[[redirects]]
+  from = "/2022-11-08-leetcode-0105-construct-binary-tree-from-preorder-and-inorder-traversal/"
+  to = "/posts/2022-11-08-leetcode-0105-construct-binary-tree-from-preorder-and-inorder-traversal/"
+
+[[redirects]]
+  from = "/2022-12-14-leetcode-622-design-circular-queue/"
+  to = "/posts/2022-12-14-leetcode-622-design-circular-queue/"
+
+[[redirects]]
+  from = "/2022-10-13-leetcode-969-pancake-sorting/"
+  to = "/posts/2022-10-13-leetcode-969-pancake-sorting/"
+
+[[redirects]]
+  from = "/2022-10-18-leetcode-300-longest-increasing-subsequence"
+  to = "/posts/2022-10-18-leetcode-300-longest-increasing-subsequence"
+
+[[redirects]]
+  from = "/2022-11-02-leetcode-0236-lowest-common-ancestor-of-a-binary-tree/"
+  to = "/posts/2022-11-02-leetcode-0236-lowest-common-ancestor-of-a-binary-tree/"
+
+[[redirects]]
+  from = "/2022-10-21-leetcode-hard-1770-maximum-score-from-performing-multiplication-operations/"
+  to = "/posts/2022-10-21-leetcode-hard-1770-maximum-score-from-performing-multiplication-operations/"
+
+[[redirects]]
+  from = "/2022-10-18-leetcode-0354-russian-doll-envelopes/"
+  to = "/posts/2022-10-18-leetcode-0354-russian-doll-envelopes/"
+
+[[redirects]]
+  from = "/2022-10-24-leetcode-1239-maximum-length-of-a-concatenated-string-with-unique-characters/"
+  to = "/posts/2022-10-24-leetcode-1239-maximum-length-of-a-concatenated-string-with-unique-characters/"
+
+[[redirects]]
+  from = "/2022-10-20-leetcode-0012-integer-to-roman"
+  to = "/posts/2022-10-20-leetcode-0012-integer-to-roman"
+
