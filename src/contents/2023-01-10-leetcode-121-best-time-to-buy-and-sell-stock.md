@@ -8,6 +8,7 @@ draft: false
 tags:
   - easy
   - greedy
+  - best-time-to-buy-and-sell-stock
 ogImage: ""
 ---
 
@@ -71,14 +72,15 @@ var maxProfit = function (prices) {
 ## 🍀 Update min price
 
 ```javascript
-let min = Infinity;
-for (const [i, price] of prices.entries()) {
-  if (min > price) {
-    min = Math.min(min, price);
-  } else {
-    ...
-  }
-}
+    let min = Infinity;
+
+    for (const [ i, price ] of prices.entries()) {
+        if (min > price) {
+            min = price;
+        } else {
+            ...
+        }
+    }
 ```
 
 ## 🍀 Update max profit
@@ -89,6 +91,7 @@ var maxProfit = function (prices) {
 
   for (const [i, price] of prices.entries()) {
     if (min > price) {
+        ...
     } else {
       const profit = price - min;
       max = Math.max(max, profit);
@@ -111,7 +114,7 @@ var maxProfit = function (prices) {
   let max = -Infinity;
   for (const [i, price] of prices.entries()) {
     if (min > price) {
-      min = Math.min(min, price);
+      min = price;
     } else {
       const profit = price - min;
       max = Math.max(max, profit);
