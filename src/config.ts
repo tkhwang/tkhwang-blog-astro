@@ -1,10 +1,10 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://tkhwang.github.io/",
+  website: "https://tkhwang.me",
   author: "tkhwang",
-  desc: "my little journey into algorithms in javascript",
-  title: "algorithms in javascript",
+  desc: "tkhwang.me: my little thoughts and journey",
+  title: "tkhwang.me",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 10,
