@@ -3,4 +3,5 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Hello! 🙋‍♂️ This is a little of my journey into algorithms and data-structures. (🥞, 🌲, 🔗, 📏, 🕸️, 🪜, ♻️, ⬇️, ⬆️, 🔀,...) Nowadays I solve leetcode problems in javascript and try to understand algorithms and data structures further.
+Hello! 🙋‍♂️ This 🕸️ is my little thoughts 🤔 and journey 👀 . <br />
+Currently, I am digging into algorithms and data structures to understand further and make my code better. [🥞, 🌲, 🔗, 📏, 🕸️, 🪜, ♻️, ⬇️, ⬆️, 🔀,...]
