@@ -2,7 +2,7 @@
 title: "leetcode 57. Insert Interval | medium | interval"
 datetime: 2023-01-16T00:00:00Z
 description: "leetcode 57. Insert Interval | javascript  | medium | interval"
-slug: ""
+slug: "2023-01-16-leetcode-57-insert-interval"
 featured: false
 draft: false
 tags:
